@@ -22,3 +22,21 @@ key 발급 순서
 
 5. ca 인증서를 
 
+
+
+
+## mosquitto에서 client certificate을 만들고 사용하는 법 
+
+
+### mosquitto(mqtt broker)의 구성을 수정
+
+- require_certificates  : client에게 인증서가 필요하다고 알려줌 -> true로 setting
+
+- use_identity_as_username : mosquitto는 password file을 사용하지말고 인증서로부터 username을 가져가라고 지시 --> true로 setting 
+
+- crlfile : client의 인증서를 폐지하고 싶을때 사용하는 certificate revocation file을 생성가능 
+
+
+### client와 broker 모두 같은 ca(여권 사무소 같은 느낌)을 사용
+
+
