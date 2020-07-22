@@ -1,0 +1,7 @@
+# mqtt broker을 대상으로 tls security 적용
+
+ca로 openssl사용 
+
+ssl connection을 시험하기 위해서 paho python client사용
+
+
