@@ -32,6 +32,8 @@
 
 - public key가 자신만을 위한 key인지 판단은 ca를 통해함 
 
+- private key는 오로지 한 곳만 가질 수 있음 
+
 
 ## CA
 
