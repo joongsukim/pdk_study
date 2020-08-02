@@ -32,12 +32,13 @@
    
    + post: 전달하려는 정보가 http body에 포함되어 전달 
    
-'''
+'''  
  @app.route('/post',methods = ['POST'])
  def post():
     value = request.form['test']
     return value 
-'''
+    
+'''  
 
 - client에서 form으로 정보를 보내서 서버쪽에서 처리 
 
@@ -46,11 +47,12 @@
    
 - render_template : template 폴더안에 있는 html문서를 사용할때 사용 
 
-'''
+'''  
 @app.route('test')
 def test():
     return render_template('post.html')
-''' 
+    
+'''   
  
   post.html이라는 파일을 불러와 리턴 
   
