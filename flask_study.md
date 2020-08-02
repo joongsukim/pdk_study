@@ -32,13 +32,13 @@
    
    + post: 전달하려는 정보가 http body에 포함되어 전달 
    
-'''  
- @app.route('/post',methods = ['POST'])
- def post():
-    value = request.form['test']
-    return value 
+
+  @app.route('/post',methods = ['POST'])
+  def post():
+     value = request.form['test']
+     return value 
     
-'''  
+
 
 - client에서 form으로 정보를 보내서 서버쪽에서 처리 
 
